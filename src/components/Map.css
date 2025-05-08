@@ -1,0 +1,208 @@
+.ship-details-card {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #333;
+    width: 320px; /* Adjust width as needed */
+    overflow: hidden;
+    display:'flex';
+    flex-direction: row;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  
+  .flag-name {
+    display: flex;
+    align-items: center;
+  }
+  
+  .flag {
+    font-size: 1.2em;
+    margin-right: 8px;
+  }
+  
+  .vessel-name {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  .options {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dots,
+  .close {
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #777;
+    margin-left: 10px;
+  }
+  
+  .subheader {
+    background-color: #f9f9f9;
+    padding: 8px 15px;
+    color: #555;
+  }
+  
+  .image-section {
+    position: relative;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .ship-image {
+    width: 100%;
+    display: block;
+    aspect-ratio: 16 / 9; /* Adjust aspect ratio if needed */
+    object-fit: cover;
+  }
+  
+  .photos-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .photos-icon {
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  
+  .photos-text {
+    margin-right: 5px;
+  }
+  
+  .photos-count {
+    font-weight: bold;
+    margin-right: auto;
+  }
+  
+  .arrow-right {
+    font-size: 1em;
+  }
+  
+  .vessel-details-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 0 0 8px 8px;
+  }
+  
+  .navigation-status,
+  .speed-course,
+  .draught {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .status-label,
+  .speed-label,
+  .draught-label {
+    color: #777;
+    margin-bottom: 5px;
+  }
+  
+  .status-value strong {
+    font-weight: bold;
+  }
+  
+  .speed-value,
+  .draught-value {
+    font-weight: bold;
+  }
+  
+  .track-voyage {
+    display: flex;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .track-button,
+  .voyage-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 8px 12px;
+    margin-right: 10px;
+    text-decoration: none;
+  }
+  
+  .track-button:hover,
+  .voyage-button:hover {
+    text-decoration: underline;
+  }
+  
+  .received-info {
+    padding: 10px 15px;
+    color: #777;
+    font-size: 0.9em;
+  }
+  
+  .received-info strong {
+    font-weight: bold;
+    color: #555;
+  }
+
+  /* Map.css */
+/* ... other styles ... */
+
+.tile-layer-switcher {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column; /* Arrange buttons vertically */
+  gap: 5px; /* Space between buttons */
+}
+
+.tile-layer-switcher button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.tile-layer-switcher button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.tile-layer-switcher button:hover {
+  background-color: #e0e0e0;
+}
+
+.map-container-wrapper {
+  position: relative; /* To contain the absolute positioned switcher */
+  height: 80vh;
+  width: 80vw;
+}
